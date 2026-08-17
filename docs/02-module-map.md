@@ -12,23 +12,36 @@
 
 ---
 
+## Progress
+
+| Batch | Modules | State |
+|---|---|---|
+| 1 | F1, F2, F3, F4, F10, F11 | **Drafted — awaiting review** |
+| 2 | F8, M1, M4, M10, M12 | Not started |
+| 3 | M2, M5, M6, M7, M8, M9 | Not started |
+| 4 | O1, O2, O3, O4, O5 | Not started |
+| 5 | Fin1–Fin6, M3, M11 | Not started |
+| 6 | H1–H8, O6–O9, F5, F6, F7, F9 | Not started |
+
+---
+
 ## Foundation — F1–F11
 
 Everything else depends on these. All BUILD.
 
-| ID | Module | Status |
-|---|---|---|
-| F1 | Identity, Auth, RBAC & Org Model | Batch 1 |
-| F2 | Data Model & Tenancy Conventions | Batch 1 |
-| F3 | AI Agent Layer & Orchestration | Batch 1 |
-| F4 | Connector & Skills Registry (MCP) | Batch 1 |
-| F5 | Notification & Event Bus | Batch 6 |
-| F6 | File & Object Storage Core | Batch 6 |
-| F7 | Audit, Observability & Backup | Batch 6 |
-| F8 | Guided Mode & Onboarding | Batch 2 |
-| F9 | Reporting & BI Core | Batch 6 |
-| F10 | AI Model Router & Cost Governor | Batch 1 |
-| F11 | Automation & Workflow Engine | Batch 1 |
+| ID | Module | Batch | Status |
+|---|---|---|---|
+| F1 | [Identity, Auth, RBAC & Org Model](srs/F1-identity-auth-rbac.md) | 1 | Draft |
+| F2 | [Data Model & Tenancy Conventions](srs/F2-data-model-tenancy.md) | 1 | Draft |
+| F3 | [AI Agent Layer & Orchestration](srs/F3-ai-agent-layer.md) | 1 | Draft |
+| F4 | [Connector & Skills Registry (MCP)](srs/F4-connector-skills-registry.md) | 1 | Draft |
+| F5 | Notification & Event Bus | 6 | — |
+| F6 | File & Object Storage Core | 6 | — |
+| F7 | Audit, Observability & Backup | 6 | — |
+| F8 | Guided Mode & Onboarding | 2 | — |
+| F9 | Reporting & BI Core | 6 | — |
+| F10 | [AI Model Router & Cost Governor](srs/F10-model-router-cost-governor.md) | 1 | Draft |
+| F11 | [Automation & Workflow Engine](srs/F11-automation-workflow-engine.md) | 1 | Draft |
 
 ---
 
