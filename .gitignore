@@ -1,0 +1,32 @@
+# Local scratch
+_to_delete/
+*.zip
+
+# Locally installed Claude skill bundles — tooling, not project source
+.claude/skills/
+__pycache__/
+*.pyc
+.coverage
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+token.json
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Dependencies / build (for when implementation starts)
+node_modules/
+.next/
+dist/
+build/
+coverage/
+*.log
