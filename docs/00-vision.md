@@ -92,7 +92,8 @@ Every current subscription maps to the module that replaces it, or to the "canno
 |---|---|---|---|
 | Notion | O1 (projects/tasks), M1 (CRM), O9 (knowledge base) | TBC | Primary system of record today |
 | Odoo | Fin1–Fin6 via ERPNext | ~₹897 per invoice observed | Invoice SJO/2026/05/0702, May 2026 |
-| Wati / AiSensy class | M10 WhatsApp Business Platform | TBC | WABA already provisioned — see §6 |
+| **Makunai — Babbler** (WhatsApp platform) | M10 WhatsApp Business Platform | TBC | WABA `1270372887860442` named "Beyond Pixel Studio Makunai Global (Babbler) API" |
+| **Makunai — Maglo CRM** | M1 AI CRM | TBC | GLO Plan, PO MG/PO/2026/00019, 18 Mar 2026; onboarded 1 Apr; live 15 Apr 2026 |
 | Buffer / Hootsuite class | M5 Social Media Management | TBC | Confirm whether currently subscribed |
 | Frame.io / WeTransfer / Dropbox class | O4 DAM & Media Review, F6 Storage | TBC | Confirm current file-delivery tooling |
 | Keka class HRMS | H1–H7 via Frappe HR | TBC | Named as the target to replace |
@@ -100,7 +101,8 @@ Every current subscription maps to the module that replaces it, or to the "canno
 | Akismet | Retired with WordPress migration | TBC | Receipt #117273265, May 2026 |
 | eBundleTools | F10 model router + M6 SEO | Expired | Repeated renewal nags; plan lapsed |
 | Emergent | Retired once platform exists | ₹249/mo | Razorpay sub_TIuYwipjyl0y8u, Jul 2026 |
-| Makunai Global | **Unknown — needs identification** | TBC | Subscription started 15 Apr 2026 |
+
+**Makunai Global Technologies is the single largest replacement target.** It supplies two products — Maglo CRM and Babbler — which M1 and M10 replace together. Contract term and notice period are unknown and must be established before build scheduling, since M1 and M10 need to be production-ready before the renewal date to avoid paying for both.
 
 ### Cannot be replaced — these are floors
 
@@ -158,8 +160,10 @@ Two further assets worth naming: an established Meta advertising operation with 
 
 These must be answered before the build-order decision:
 
+> ⚠️ **Live operational issue, unresolved as of drafting.** Meta issued delivery-failure notices on 15 August 2026 (three) and 23 May 2026: *"A payment or account setup issue for your WhatsApp Business account Beyond Pixel Studio Makunai Global (Babbler) API is preventing messages from being delivered to your customers."* WhatsApp messaging to clients is broken until resolved in Meta Billing. This is a business problem now, not a platform problem — but it is also why FR-M10-46 (health monitoring with immediate alert) exists.
+
 1. What is the actual total monthly SaaS spend? Every `TBC` above needs a real figure.
-2. What is the Makunai Global subscription, and is it still active?
+2. What are the Makunai contract terms — cost, term, and notice period — for Maglo CRM and Babbler? This sets the deadline for M1 and M10.
 3. Is there a Buffer-class social tool and a Frame.io-class review tool currently subscribed, or is that work done manually today?
 4. How many client social accounts are under management, and at what posting volume? This sizes the M5/M10 token budget.
 5. What is the acceptable monthly infrastructure budget? This decides whether a GPU instance for local inference is viable, which materially changes the F10 design.

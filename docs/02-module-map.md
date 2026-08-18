@@ -16,8 +16,8 @@
 
 | Batch | Modules | State |
 |---|---|---|
-| 1 | F1, F2, F3, F4, F10, F11 | **Drafted — awaiting review** |
-| 2 | F8, M1, M4, M10, M12 | Not started |
+| 1 | F1, F2, F3, F4, F10, F11 | **Drafted** |
+| 2 | F8, M1, M4, M10, M12 | **Drafted** |
 | 3 | M2, M5, M6, M7, M8, M9 | Not started |
 | 4 | O1, O2, O3, O4, O5 | Not started |
 | 5 | Fin1–Fin6, M3, M11 | Not started |
@@ -38,7 +38,7 @@ Everything else depends on these. All BUILD.
 | F5 | Notification & Event Bus | 6 | — |
 | F6 | File & Object Storage Core | 6 | — |
 | F7 | Audit, Observability & Backup | 6 | — |
-| F8 | Guided Mode & Onboarding | 2 | — |
+| F8 | [Guided Mode & Onboarding](srs/F8-guided-mode-onboarding.md) | 2 | Draft |
 | F9 | Reporting & BI Core | 6 | — |
 | F10 | [AI Model Router & Cost Governor](srs/F10-model-router-cost-governor.md) | 1 | Draft |
 | F11 | [Automation & Workflow Engine](srs/F11-automation-workflow-engine.md) | 1 | Draft |
@@ -49,18 +49,18 @@ Everything else depends on these. All BUILD.
 
 | ID | Module | Class | Batch |
 |---|---|---|---|
-| M1 | AI CRM | BUILD | 2 |
+| M1 | [AI CRM](srs/M1-ai-crm.md) — *replaces Maglo CRM* | BUILD | 2 · **Draft** |
 | M2 | Lead Capture — forms, landing pages, lead-ad ingestion | BUILD | 3 |
 | M3 | Proposals, Quotations, Contracts & E-Signature | BUILD | 5 |
-| M4 | **Content Delivery Pipeline** | BUILD | 2 |
+| M4 | [**Content Delivery Pipeline**](srs/M4-content-delivery-pipeline.md) | BUILD | 2 · **Draft** |
 | M5 | Social Media Management *(Buffer-class)* | BUILD + WRAP Postiz | 3 |
 | M6 | Agentic SEO | BUILD + paid data API | 3 |
 | M7 | Google Business Profile *(Dhanda-class)* | BUILD | 3 |
 | M8 | Reputation & Review Management | BUILD | 3 |
 | M9 | Ad Ops — Meta campaigns, pacing, reporting | BUILD | 3 |
-| M10 | **WhatsApp Business Platform** | BUILD | 2 |
+| M10 | [**WhatsApp Business Platform**](srs/M10-whatsapp-business-platform.md) — *replaces Babbler* | BUILD | 2 · **Draft** |
 | M11 | Email & SMS Marketing | WRAP Listmonk | 5 |
-| M12 | Client Portal & White-Label Reporting | BUILD | 2 |
+| M12 | [Client Portal & White-Label Reporting](srs/M12-client-portal.md) | BUILD | 2 · **Draft** |
 
 M4 encodes what BPS actually sells. M7 and M10 are the most directly resellable to existing clients.
 
@@ -210,7 +210,8 @@ Used to verify the SRS set is complete. Every subscription in `00-vision.md` mus
 |---|---|
 | Notion | O1, M1, O9 |
 | Odoo | Fin1–Fin6 |
-| Wati / AiSensy | M10 |
+| **Makunai Babbler** (WhatsApp) | M10 |
+| **Makunai Maglo CRM** | M1 |
 | Buffer / Hootsuite | M5 |
 | Frame.io / WeTransfer | O4, F6 |
 | Keka | H1–H7 |
@@ -220,4 +221,3 @@ Used to verify the SRS set is complete. Every subscription in `00-vision.md` mus
 | Emergent | *(retired — platform supersedes)* |
 | Dhanda-class GMB tooling | M7, M8 |
 | Make / Zapier class | F11 |
-| Makunai Global | **unidentified — open question in `00-vision.md` §7** |
