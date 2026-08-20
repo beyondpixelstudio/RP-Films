@@ -137,13 +137,6 @@ h1+.lede,h2+.lede,h2+p{margin-top:var(--s-3)}
 
 /* ---------- 6. Header ---------- */
 .topbar{position:fixed; inset:0 0 auto 0; z-index:120}
-.demo-flag{
-  background:var(--crimson); color:#fff; text-align:center;
-  font-size:.68rem; letter-spacing:.06em; padding:7px var(--s-2); line-height:1.4;
-}
-.demo-flag b{font-weight:700}
-.demo-flag__short{display:none}
-@media(max-width:720px){.demo-flag__long{display:none} .demo-flag__short{display:inline}}
 
 .header{
   position:relative; padding-block:var(--s-2);

@@ -554,7 +554,9 @@
 
   function paintFrame(canvas, grade, time) {
     var g = GRADES[grade] || GRADES.temple;
-    var ctx = canvas.getContext('2d');
+    // The grain pass reads the whole frame back every tick; without this hint
+    // the browser keeps the buffer GPU-side and each readback stalls.
+    var ctx = canvas.getContext('2d', { willReadFrequently: true });
     var w = canvas.width, h = canvas.height;
 
     var wash = ctx.createLinearGradient(0, 0, w, h);
